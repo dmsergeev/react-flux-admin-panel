@@ -1,1 +1,1 @@
-# react-flux-admin-panel
+# Learning react & redux
