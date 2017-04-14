@@ -18,6 +18,6 @@ render( <
   routes = {
     routes
   }
-  />,
+  />, 
   document.getElementById('app')
 );
