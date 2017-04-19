@@ -10,13 +10,16 @@ import {
 import routes from './routes.jsx';
 import './styles/styles.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import {Provider} from 'react-redux';
+import { Provider } from 'react-redux';
 import configureStore from './store/configureStore';
+import { loadCourses } from './actions/courseActions';
 
 const store = configureStore();
+store.dispatch(loadCourses());
+debugger;
 render(
-<Provider store={store}>
-<Router history={browserHistory} routes={routes}/>
-</Provider>,
+  <Provider store={store}>
+    <Router history={browserHistory} routes={routes} />
+  </Provider>,
   document.getElementById('app')
 );
